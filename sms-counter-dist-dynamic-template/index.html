@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SmsCounter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.3ff695c00d717f2d2a11.css"></head>
+<body>
+  <app-root></app-root>
+  <noscript id="appContent">
+    <textarea cols="30"
+              rows="10"
+              [(ngModel)]="smsText"
+              (ngModelChange)="updateSmsData($event)"></textarea>
+    <p>
+      {{smsLength}} / {{smsMaxPerPage}} ({{smsPageCount}} sms)
+    </p>
+  </noscript>
+  <script>
+      var mainTemplate = document.getElementById('appContent');
+      window.mainTemplate = mainTemplate.innerText;
+  </script>
+<script src="runtime-es2015.4aa7f8ea4a9fb29947d7.js" type="module"></script><script src="runtime-es5.4aa7f8ea4a9fb29947d7.js" nomodule defer></script><script src="polyfills-es5.1391eadf32e9f7989d34.js" nomodule defer></script><script src="polyfills-es2015.d762042fb33a89eb6431.js" type="module"></script><script src="main-es2015.3930df7547589e8c84c4.js" type="module"></script><script src="main-es5.3930df7547589e8c84c4.js" nomodule defer></script></body>
+</html>
